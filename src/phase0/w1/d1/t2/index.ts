@@ -25,3 +25,5 @@ const getAuthorizedUserNames = (users: User[]): string[] => {
 // const getAuthorizedUserNames = (users: User[]): string[] => {
 //   return users.filter(user => ["admin", "member"].includes(user.role)).map(user => user.name)
 // }
+
+export { };

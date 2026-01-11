@@ -26,3 +26,5 @@ const getAllTags = (posts: Post[]): string[] => {
 }
 
 console.log(getAllTags(posts));
+
+export { };
