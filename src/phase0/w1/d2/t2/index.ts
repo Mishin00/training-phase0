@@ -15,7 +15,7 @@ type Participant = {
 }
 
 const getCleanedParticipantList = (data: any[]): string[] => {
-  return data.filter(data => data.name && data.age >= 18)
+  return data.filter(data => data.name && typeof data.name === "string" && data.age >= 18)
     .sort((a, b) => {
       if (a.isVip !== b.isVip) return a.isVip ? -1 : 1;
       return b.age - a.age;
